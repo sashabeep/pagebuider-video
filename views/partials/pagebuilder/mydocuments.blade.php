@@ -23,7 +23,7 @@
 
 @if(!empty($docs))
 <section class="{{ $item['padding'] }}">
-	@if($item['title'])<h2 class="mb-4 text-center">Подборка статей по теме страницы</h2>@endif
+	@if($item['title'])<h2 class="mb-4 text-center">{{ $item['title'] }}</h2>@endif
 	<div class="row xs-up-1 sm-up-1 md-up-2 lg-up-3 cbfix">
 		@foreach($docs as $doc)
 			@include('partials.content.blogitem',['item'=>$doc])
